@@ -6,7 +6,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { TabView } from 'react-native-elements/dist/TabView';
 import { ScreenContainer } from 'react-native-screens';
 
-export const BerandaScreen = ({ Navigation }) => {
+export const BerandaScreen = ({ navigation }) => {
 
     return (
         <ScrollView style={{ backgroundColor:"black"}}>

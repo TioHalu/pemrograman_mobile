@@ -4,7 +4,7 @@ import { View, Image } from 'react-native';
 import { Searchbar, Button } from 'react-native-paper';
 import { BerandaScreen } from './Home';
 
-export const AppNotif = (Navigation) => {
+export const AppNotif = ({navigation}) => {
     return (
         <View style={{
             paddingStart:10,
@@ -13,7 +13,7 @@ export const AppNotif = (Navigation) => {
             width:300
         }}>
             <View>
-                <Button mode="text" onPress={()=> Navigation.navigate('Home')}>All</Button>
+                <Button mode="text">All</Button>
             </View>
             <View><Button mode="text">Reetwet</Button></View>
         </View>

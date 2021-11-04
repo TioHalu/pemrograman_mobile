@@ -4,7 +4,7 @@
 
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
-import HomeApp from './tugas5/twitter/Navigation';
+import AppHome from './tugas5/kelompok3/HomeScreen';
 
 
-AppRegistry.registerComponent(appName, () => HomeApp);
+AppRegistry.registerComponent(appName, () => AppHome);
