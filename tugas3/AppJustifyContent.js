@@ -8,7 +8,7 @@ const AppJustifyContent = () => {
             <View style={{ height: 75, backgroundColor: 'powderblue' }} />
             <ScrollView style={{ flex: 1, backgroundColor: 'white' }}>
                 <Text style={[styles.subTitle]}>{flex}</Text>
-                <View style={[styles.countainer,{justifyContent: (flex)}]}>
+                <View style={[styles.countainer, {justifyContent:(flex)}]}>
                     <View style={[styles.box, { backgroundColor: "powderblue" }]} />
                     <View style={[styles.box, { backgroundColor: "skyblue" }]} />
                     <View style={[styles.box, { backgroundColor: "steelblue" }]} />
@@ -16,8 +16,8 @@ const AppJustifyContent = () => {
             </ScrollView>
             <View style={{ height:300, backgroundColor: 'steelblue' }}>
                 <View style={[styles.countainer, {
-                    justifyContent: 'space-between',
-                    marginTop: 10, flexDirection:'column', flex:1
+                    justifyContent: 'space-between', flexDirection:"column",flex:1,
+                    marginTop: 10
                 }]}>
                     <Button title="flexstart" onPress={() => setflex('flex-start')}
                         style={{ backgroundColor: "powderblue" }} />
