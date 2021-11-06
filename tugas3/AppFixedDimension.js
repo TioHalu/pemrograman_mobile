@@ -1,13 +1,12 @@
-import React from "react";
-import {View} from "react-native"
-
-export const AppFixedDimension = () =>{
-    return(
-        <View style={{ flex: 1 }}>
-            <View style={{ backgroundColor: 'powderblue' }} />
-            <View style={{ backgroundColor: 'skyblue' }} />
-            <View style={{ backgroundColor: 'steelblue' }} />
+import React from 'react';
+import { View } from 'react-native';
+const AppFixedDimensions = () => {
+    return (
+        <View>
+            <View style={{ width: 100, height: 100, backgroundColor: 'powderblue' }} />
+            <View style={{ width: 200, height: 200, backgroundColor: 'skyblue' }} />
+            <View style={{ width: 300, height: 300, backgroundColor: 'steelblue' }} />
         </View>
-
     );
-}
+};
+export default AppFixedDimensions;

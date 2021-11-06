@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image, Button } from 'react-native';
+import { Text, View, Image, Button, Alert} from 'react-native';
 
 export const AppHeader = () => {
     return(

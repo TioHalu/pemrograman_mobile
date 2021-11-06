@@ -4,7 +4,7 @@
 
 import {AppRegistry} from 'react-native';
 import {name as appName} from './app.json';
-import AppHome from './tugas5/kelompok3/HomeScreen';
+import AppJustifyContent from './tugas3/AppJustifyContent';
 
 
-AppRegistry.registerComponent(appName, () => AppHome);
+AppRegistry.registerComponent(appName, () => AppJustifyContent);
