@@ -8,7 +8,7 @@ var string1 = "";
 function FunctionWithOutReturn(value) {
     string1 = value;
 }
-export function AppJsExample() {
+ function AppJsExample() {
     var string2 = FunctionWithReturn();
     FunctionWithOutReturn("Function With Out Return");
     return (
@@ -19,4 +19,4 @@ export function AppJsExample() {
         </View>
     )
 }
-
+export default AppJsExample;

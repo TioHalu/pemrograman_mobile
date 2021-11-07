@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View, Image, StyleSheet, ScrollView, Button } from 'react-native';
 import { useState } from 'react';
+
 const AppJustifyContent = () => {
     const [flex, setflex] = useState('flexstart');
     return (
@@ -8,7 +9,7 @@ const AppJustifyContent = () => {
             <View style={{ height: 75, backgroundColor: 'powderblue' }} />
             <ScrollView style={{ flex: 1, backgroundColor: 'white' }}>
                 <Text style={[styles.subTitle]}>{flex}</Text>
-                <View style={[styles.countainer, {justifyContent:(flex)}]}>
+                <View style={[styles.countainer]}>
                     <View style={[styles.box, { backgroundColor: "powderblue" }]} />
                     <View style={[styles.box, { backgroundColor: "skyblue" }]} />
                     <View style={[styles.box, { backgroundColor: "steelblue" }]} />
@@ -29,12 +30,15 @@ const AppJustifyContent = () => {
                         style={{ backgroundColor: "powderblue" }} />
                     <Button title="spacearound" onPress={() => setflex('space-around')}
                         style={{ backgroundColor: "powderblue" }} />
+                    <Button title="spaceevenly" onPress={() => setflex('space-evenly')}
+                        style={{ backgroundColor: "powderblue" }} />
                 </View>
             </View>
         </View>
     );
 }
 export default AppJustifyContent;
+
 const styles = StyleSheet.create({
     box: {
         width: 50,

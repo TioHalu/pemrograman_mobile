@@ -13,7 +13,7 @@ export const AppNotif = ({navigation}) => {
             width:300
         }}>
             <View>
-                <Button mode="text">All</Button>
+                <Button >All</Button>
             </View>
             <View><Button mode="text">Reetwet</Button></View>
         </View>

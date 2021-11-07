@@ -18,13 +18,17 @@ class AppClassExample extends Component {
         const org = new Manusia("pria");
         org.tinggi = 172;
         org.nama = "Budi";
+        org.berat = 70
         var namaOrg = org.Speak();
         return (
             <View>
                 <Text>Contoh Penggunaan Class</Text>
                 <Text>{org.tinggi}</Text>
                 <Text>{namaOrg}</Text>
+                <Text>{org.berat}</Text>
             </View>
         );
     }
 }
+
+export default AppClassExample;

@@ -6,6 +6,7 @@ import { HomeScreen } from './home';
 import { AboutScreen } from './About';
 
 
+
 const Stack = createNativeStackNavigator();
 const AppHome = () => {
     return (
@@ -13,6 +14,8 @@ const AppHome = () => {
             <Stack.Navigator initialRouteName="About">
                 <Stack.Screen name="About" component={AboutScreen} />
                 <Stack.Screen name="Home" component={HomeScreen} />
+               
+                
             </Stack.Navigator>
         </NavigationContainer>
     );

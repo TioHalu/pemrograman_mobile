@@ -17,8 +17,7 @@ const AppHome = () => {
                 headerShown: true,
                 headerStyle: { backgroundColor: '#000' },
                 headerTitleStyle: { fontWeight: 'bold' },
-                headerTitle: (props) => <AppHeader {...props}/>,
-                  
+                headerTitle: (props) => <AppHeader {...props}/>,                 
             }}>
                 <Stack.Screen name="Footer" component={MyTabs} />
             </Stack.Navigator>
@@ -34,7 +33,6 @@ import { MessageScreen } from './Message';
 import { NotifScreen } from './Notification';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {AppNotif, AppSearching} from './Notif'
-
 
 
 
@@ -73,7 +71,7 @@ function MyTabs() {
                             source={require('./images/search.png')} />
                     ), headerShown: false, tabBarShowLabel: false, tabBarActiveBackgroundColor: "#1d9bf0"
                 }}
-             
+
             />
             <Tab.Screen
                 name="notif"
